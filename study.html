@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study - 최윤성 포트폴리오</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Portfolio</a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="study.html">Study</a></li>
+          <li><a href="teamproject.html">Team Project</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <button id="darkModeBtn" class="dark-btn">Dark</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section page-head">
+        <p class="label">Study & Practice</p>
+        <h1>웹프로그래밍 학습 및 개인 실습</h1>
+        <p>
+          HTML, CSS, JavaScript를 중심으로 학습 내용을 분류했습니다.
+          각 카드를 클릭하면 해당 기술을 활용하여 진행한 실습 목록을 확인할 수 있고,
+          실습 모음을 클릭하면 각 내용에 실습내용들을 확인 할 수 있습니다.
+        </p>
+      </section>
+
+      <section class="section top-padding-none">
+        <div class="project-grid">
+          <div class="project-card study-category-card" data-target="html-practice">
+            <h3>HTML</h3>
+            <p>웹페이지의 구조와 내용을 작성하는 기술입니다.</p>
+            <div class="skill-list">
+              <span class="skill-tag">Structure</span>
+              <span class="skill-tag">Semantic Tag</span>
+            </div>
+          </div>
+
+          <div class="project-card study-category-card" data-target="css-practice">
+            <h3>CSS</h3>
+            <p>웹페이지의 디자인과 레이아웃을 구성하는 기술입니다.</p>
+            <div class="skill-list">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Layout</span>
+            </div>
+          </div>
+
+          <div class="project-card study-category-card" data-target="js-practice">
+            <h3>JavaScript</h3>
+            <p>사용자 이벤트와 동적인 기능을 구현하는 기술입니다.</p>
+            <div class="skill-list">
+              <span class="skill-tag">DOM</span>
+              <span class="skill-tag">Event</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="html-practice" class="practice-section hidden">
+          <h2>HTML 주요 실습</h2>
+          <p>HTML을 활용하여 웹페이지의 구조와 콘텐츠를 구성한 실습입니다.</p>
+
+          <div class="project-grid">
+    <div class="project-card practice-card" data-target="html-detail-1">
+      <h3>HTML 기본 구조 및 페이지 이동</h3>
+      <p>여러 HTML 페이지를 만들고 메뉴 링크로 연결한 실습입니다.</p>
+    </div>
+
+    <div class="project-card practice-card" data-target="html-detail-2">
+      <h3>목록 태그 실습</h3>
+      <p>ul, ol, li 태그를 사용하여 목록 구조를 작성한 실습입니다.</p>
+    </div>
+
+    <div class="project-card practice-card" data-target="html-detail-3">
+      <h3>테이블과 폼 실습</h3>
+      <p>table 태그와 form 태그를 사용하여 표와 입력 양식을 만든 실습입니다.</p>
+    </div>
+
+            <div class="project-card">
+              <h3>HTML 실습 모음</h3>
+              <p>HTML 관련 전체 실습 페이지와 GitHub 저장소를 확인할 수 있습니다.</p>
+              <div class="card-buttons">
+                <a href="https://html-tag-sooty.vercel.app/" target="_blank">실습내용 보기</a>
+                <a href="https://github.com/ysysys91/html-tag" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="css-practice" class="practice-section hidden">
+          <h2>CSS 주요 실습</h2>
+          <p>CSS를 활용하여 웹페이지의 디자인과 레이아웃을 구성한 실습입니다.</p>
+
+          <div class="project-grid">
+            <div class="project-card practice-card" data-target="css-detail-1">
+              <h3>CSS 선택자 실습</h3>
+              <p>태그, 클래스, ID 선택자를 이용하여 원하는 요소에 스타일을 적용한 실습입니다.</p>
+            </div>
+
+            <div class="project-card practice-card" data-target="css-detail-2">
+              <h3>반응형 레이아웃</h3>
+              <p>화면 크기에 따라 배치가 바뀌는 레이아웃 실습입니다.</p>
+            </div>
+
+            <div class="project-card practice-card" data-target="css-detail-3">
+              <h3>CSS 박스 모델</h3>
+              <p>margin, padding, border를 활용하여 요소의 크기와 배치를 조정한 실습입니다.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>CSS 실습 모음</h3>
+              <p>CSS 관련 전체 실습 페이지와 GitHub 저장소를 확인할 수 있습니다.</p>
+              <div class="card-buttons">
+                <a href="https://css-green-omega.vercel.app/" target="_blank">실습내용 보기</a>
+                <a href="https://github.com/ysysys91/CSS" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="js-practice" class="practice-section hidden">
+          <h2>JavaScript 주요 실습</h2>
+          <p>JavaScript를 활용하여 사용자 이벤트와 동적인 기능을 구현한 실습입니다.</p>
+
+          <div class="project-grid">
+            <div class="project-card practice-card" data-target="js-detail-1">
+              <h3>탁구 스코어보드</h3>
+              <p>점수 증가와 승리 조건을 처리한 실습입니다.</p>
+            </div>
+
+            <div class="project-card practice-card" data-target="js-detail-2">
+              <h3>QR 코드 생성기</h3>
+              <p>입력값을 객체로 저장하고 QR 코드로 변환한 실습입니다.</p>
+            </div>
+
+            <div class="project-card practice-card" data-target="js-detail-3">
+              <h3>서적 관리 프로그램</h3>
+              <p>책 정보를 입력하고 목록에 추가, 삭제, 저장하는 실습입니다.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>JavaScript 실습 모음</h3>
+              <p>JavaScript 관련 전체 실습 페이지와 GitHub 저장소를 확인할 수 있습니다.</p>
+              <div class="card-buttons">
+                <a href="https://js-five-beige.vercel.app/" target="_blank">실습내용 보기</a>
+                <a href="https://github.com/ysysys91/js" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="html-detail-1" class="practice-detail hidden">
+  <h2>HTML 기본 구조 및 페이지 이동</h2>
+  <p>
+    index.html을 중심으로 about.html, contact.html, github.html 등 여러 HTML 페이지를
+    만들고 nav 메뉴의 a 태그를 이용하여 페이지를 서로 연결했습니다.
+    이를 통해 웹사이트의 기본 구조와 페이지 이동 방식을 학습했습니다.
+  </p>
+  <div class="skill-list">
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">Navigation</span>
+    <span class="skill-tag">Multi Page</span>
+  </div>
+</div>
+
+<div id="html-detail-2" class="practice-detail hidden">
+  <h2>목록 태그 실습</h2>
+  <p>
+    ul, ol, li 태그를 사용하여 순서가 있는 목록과 순서가 없는 목록을 작성했습니다.
+    메뉴, 항목 정리, 정보 나열 등 웹페이지에서 자주 사용하는 목록 구조를 학습했습니다.
+  </p>
+  <div class="skill-list">
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">List</span>
+    <span class="skill-tag">ul / ol / li</span>
+  </div>
+</div>
+
+<div id="html-detail-3" class="practice-detail hidden">
+  <h2>테이블과 폼 실습</h2>
+  <p>
+    table, tr, th, td 태그를 사용하여 표를 만들고,
+    form, input, label 태그를 사용하여 사용자가 정보를 입력할 수 있는 양식을 작성했습니다.
+    이를 통해 데이터 표현과 입력 화면 구성을 학습했습니다.
+  </p>
+  <div class="skill-list">
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">Table</span>
+    <span class="skill-tag">Form</span>
+  </div>
+</div>
+
+        <div id="css-detail-1" class="practice-detail hidden">
+  <h2>CSS 선택자 실습</h2>
+  <p>
+    태그 선택자, 클래스 선택자, ID 선택자와
+    가상 클래스(:hover)를 사용하여 원하는 요소에
+    스타일을 적용하는 방법을 학습했습니다.
+  </p>
+
+  <div class="skill-list">
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">Selector</span>
+    <span class="skill-tag">Hover</span>
+  </div>
+</div>
+
+        <div id="css-detail-2" class="practice-detail hidden">
+  <h2>CSS 박스 모델</h2>
+
+  <p>
+    margin, padding, border 속성을 사용하여
+    요소 간의 간격과 크기를 조정하는 방법을 학습했습니다.
+  </p>
+
+  <div class="skill-list">
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">Box Model</span>
+    <span class="skill-tag">Layout</span>
+  </div>
+</div>
+
+        <div id="css-detail-3" class="practice-detail hidden">
+  <h2>Flexbox 레이아웃</h2>
+
+  <p>
+    display:flex, justify-content, align-items 속성을
+    활용하여 다양한 화면 배치를 구현했습니다.
+  </p>
+
+  <div class="skill-list">
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">Flexbox</span>
+    <span class="skill-tag">Responsive</span>
+  </div>
+</div>
+
+        
+
+        <div id="js-detail-1" class="practice-detail hidden">
+          <h2>탁구 스코어보드</h2>
+          <p>
+            버튼 클릭 이벤트를 이용해 청팀과 홍팀의 점수를 증가시키고,
+            조건문을 사용해 승리 조건을 판별했습니다.
+          </p>
+          <div class="skill-list">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Event</span>
+            <span class="skill-tag">Condition</span>
+          </div>
+        </div>
+
+        <div id="js-detail-2" class="practice-detail hidden">
+          <h2>QR 코드 생성기</h2>
+          <p>
+            사용자가 입력한 값을 객체로 저장하고 JSON 문자열로 변환한 뒤
+            QR 코드 라이브러리를 이용해 QR 코드를 생성했습니다.
+          </p>
+          <div class="skill-list">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Object</span>
+            <span class="skill-tag">JSON</span>
+          </div>
+        </div>
+
+        <div id="js-detail-3" class="practice-detail hidden">
+  <h2>서적 관리 프로그램</h2>
+  <p>
+    사용자가 책 제목, 저자, ISBN을 입력하면 책 목록에 추가되고,
+    삭제 버튼을 누르면 목록에서 제거되는 프로그램을 구현했습니다.
+    Book 클래스와 UI 클래스를 이용하여 데이터를 객체로 관리하고,
+    localStorage를 활용하여 새로고침 후에도 책 정보가 유지되도록 했습니다.
+  </p>
+
+  <div class="skill-list">
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">Class</span>
+    <span class="skill-tag">Object</span>
+    <span class="skill-tag">DOM</span>
+    <span class="skill-tag">localStorage</span>
+  </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Study page - Category Click Event / DOM Manipulation / Practice Link</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
